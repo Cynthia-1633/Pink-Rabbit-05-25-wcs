@@ -1,14 +1,8 @@
 import { useEffect, useState } from "react";
 import "./CocktailList.css";
 import CocktailView from "../components/CocktailView/CocktailView";
+import type { Cocktail } from "../Interfaces/Cocktail";
 
-interface CocktailListProps {
-	cocktail: {
-		idDrink: string;
-		strDrink: string;
-		strDrinkThumb: string;
-	};
-}
 const popularCocktailList = [
 	"Margarita",
 	"Daiquiri",
@@ -25,7 +19,7 @@ const popularCocktailList = [
 ];
 
 function CocktailList() {
-	const [cocktails, setCocktails] = useState([]);
+	const [cocktails, setCocktails] = useState<Cocktail[]>([]);
 	const [search, setSearch] = useState("");
 
 	useEffect(() => {
