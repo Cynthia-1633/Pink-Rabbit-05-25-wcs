@@ -1,10 +1,10 @@
 import "./Navbar.css";
 import { NavLink } from "react-router";
-import chatIcon from "../../images/chatIcon.png";
-import homeIcon from "../../images/homeIcon.png";
-import cocktailIcon from "../../images/cocktailIcon.png";
-import favouriteIcon from "../../images/favouriteIcon.png";
-import quizIcon from "../../images/quizIcon.png";
+import chatIcon from "../../images/chat-icon.png";
+import homeIcon from "../../images/home-icon.png";
+import cocktailIcon from "../../images/cocktail-icon.png";
+import favouriteIcon from "../../images/favourite-icon.png";
+import quizIcon from "../../images/quiz-icon.png";
 
 function Navbar() {
 	return (
